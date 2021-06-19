@@ -47,3 +47,6 @@ stateDiagram-v2
 ## 5. i_checkN
     1. Congratulate farmer.
     1. Add reminder for next check.
+## 6. d_checkN_failed
+    1. change animal state to can be inseminated.
+    1. remove reminders set for calving.
