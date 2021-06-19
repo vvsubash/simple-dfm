@@ -4,6 +4,7 @@
   "description": "",
   "main": "application-state-machine.js",
   "scripts": {
+    "start": "echo 'heelo'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

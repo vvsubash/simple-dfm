@@ -1,3 +1,16 @@
+
+const superS = {
+  initial: 'walk',
+  states: {
+    walk: {
+      onDone: {
+        target: 'justCalved'
+      }
+    },
+
+  }
+}
+
 const appstate = Machine({
   initial: "justCalved",
   states: {
@@ -60,10 +73,11 @@ const appstate = Machine({
     driedCheckTwo: {
       on: {
         removed: "animalRemoved",
-        checkFailed: "canBeInseminated",
+        checkFailed: "justCalved",
         calved: "justCalved",
       },
     },
+    ...superS
   },
 
   activities: {
